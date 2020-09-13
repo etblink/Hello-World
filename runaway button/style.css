@@ -1,0 +1,71 @@
+/* 
+==============================
+GLOBAL VARIABLES
+==============================
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* main colors */
+    --clr-primary-1: #94C0CD;    
+    --clr-primary-2: #919095;    
+    --clr-primary-3: #F5DBCB;    
+    --clr-primary-4: #A68E7A;    
+    --clr-primary-5: #2A4E5A;    
+    /* white */
+    --clr-white: #fff;
+    /* transition */
+    --transition: all 2s ease;    
+}
+h1 {
+    text-transform: capitalize;
+    color: var(--clr-white);
+}
+p {
+    padding: 0 3rem;
+}
+a{
+    text-decoration: none;
+}
+.btn {
+    text-transform: uppercase;
+    background: var(--clr-primary-1);
+    border: 3px solid var(--clr-primary-5);
+    color: var(--clr-primary-5);
+    font-weight: 600;
+    padding: 1rem;
+    transition: var(--transition);
+}
+.btn:hover {
+    color: var(--clr-primary-2);
+    background: var(--clr-primary-5);
+    border: 3px solid var(--clr-primary-1);
+}
+/* 
+==============================
+HEADER
+==============================
+*/
+.hero {
+    background: url(./images/runner.jpg) center/cover no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-banner {
+    transform: translateY(-45px);
+    text-align: center;
+}
+.hero-title {
+    margin: 1rem;
+}
+.hero-text {
+    padding: 0 2rem 2rem 2rem;
+    max-width: 25rem;
+    color: rgb(45,45,45);
+}
